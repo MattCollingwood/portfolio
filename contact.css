@@ -1,0 +1,272 @@
+* {
+    font-family: "Inter", sans-serif;
+    color: rgb(253, 238, 219);
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #1B1D1D;
+    background: linear-gradient(90deg, rgba(27, 29, 29, 1) 47%, rgba(2, 17, 92,1) 100%);
+    width: 100%;
+}
+
+main {
+    padding: 1rem;
+    font-family: "Inter", sans-serif;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.hexagon {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(blue, purple);
+}
+
+
+.hexagon h4 {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(253, 238, 219);
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+
+.hexagon:before, .double:after {
+  position: absolute;
+  content: '';
+}
+.hexagon:before {
+  top: 4px;  /* border width */
+  left: 4px;  /* border width */
+  height: calc(100% - 8px);  /* 100% - (2 * border width) */
+  width: calc(100% - 8px);  /* 100% - (2 * border width) */
+  background: rgb(18, 19, 18);
+}
+.hexagon, .hexagon:before, .double:after {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.css:after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background: url(https://imgs.search.brave.com/vBqGzFEGVXZwpcQTKVR26ON6C9njAGJMcLZthdnQ0b4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc);
+  background-size: 70px, 70px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 25px;
+}
+
+.node:after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background: url(https://imgs.search.brave.com/AK34oV4D7w6zwm225Zbt_mLGvwvR5I3A1pWhkebn-iQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9ub2RlanMtMy5z/dmc);
+  background-size: 70px, 70px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 25px;
+}
+
+/*
+.double:after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background: url(https://imgs.search.brave.com/vBqGzFEGVXZwpcQTKVR26ON6C9njAGJMcLZthdnQ0b4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc);
+  background-size: 70px, 70px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 25px;
+}
+*/
+
+
+/* Just for demo */
+
+.hexagon {
+  display: inline-block;
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.hexagons {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: linear-gradient(blue, purple);
+  offset-rotate: -60deg;
+}
+
+
+.hexagons h4 {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(253, 238, 219);
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+
+.hexagons:before, .doubles:after {
+  position: absolute;
+  content: '';
+  offset-rotate: -60deg;
+}
+.hexagons:before {
+  top: 4px;  /* border width */
+  left: 4px;  /* border width */
+  height: calc(100% - 8px);  /* 100% - (2 * border width) */
+  width: calc(100% - 8px);  /* 100% - (2 * border width) */
+  background: rgb(18, 19, 18);
+  offset-rotate: -60deg;
+}
+.hexagons, .hexagons:before, .doubles:after {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  offset-rotate: -60deg;
+}
+
+
+.css:after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background: url(https://imgs.search.brave.com/vBqGzFEGVXZwpcQTKVR26ON6C9njAGJMcLZthdnQ0b4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc);
+  background-size: 70px, 70px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 25px;
+}
+
+.node:after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background: url(https://imgs.search.brave.com/AK34oV4D7w6zwm225Zbt_mLGvwvR5I3A1pWhkebn-iQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/d29ybGR2ZWN0b3Js/b2dvLmNvbS9sb2dv/cy9ub2RlanMtMy5z/dmc);
+  background-size: 70px, 70px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 25px;
+}
+
+/*
+.double:after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background: url(https://imgs.search.brave.com/vBqGzFEGVXZwpcQTKVR26ON6C9njAGJMcLZthdnQ0b4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc);
+  background-size: 70px, 70px, contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 25px;
+}
+*/
+
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+
+@function multiple-box-shadow($50) {
+  $value: "#{random(2000)}px #{random(2000)}px #FFF"; 
+  @for $i from 2 through $50 {
+    $value: "#{$value}, #{random(2000)}px #{random(2000)}px #FFF"; 
+  }
+  @return unquote($value); 
+}
+
+/*
+$shadows-small: multiple-box-shadow(700); 
+$shadows-medium: multiple-box-shadow(200); 
+$shadows-big: multiple-box-shadow(100); 
+
+
+.star-layers {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #85cb33 0%, #100b00 100%);
+  overflow: hidden;
+  position: relative;
+}
+  
+.star-layer {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+}
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+    }
+  
+
+  #stars {
+    box-shadow: $shadows-small; 
+    animation: animStar 50s linear infinite;
+    &::after {
+      box-shadow: $shadows-small; 
+    }
+  }
+
+  #stars2 {
+    width: 2px;
+    height: 2px;
+    box-shadow: $shadows-medium; 
+    animation: animStar 100s linear infinite;
+    &::after {
+      width: 2px;
+      height: 2px;
+      box-shadow: $shadows-medium; 
+    }
+  }
+
+  #stars3 {
+    width: 3px;
+    height: 3px;
+    box-shadow: $shadows-big; 
+    animation: animStar 150s linear infinite;
+    &::after {
+      width: 3px;
+      height: 3px;
+      box-shadow: $shadows-big; 
+    }
+  }
+*/
+
