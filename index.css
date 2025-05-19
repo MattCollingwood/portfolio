@@ -3,9 +3,7 @@
     color: rgb(253, 238, 219);
 }
 
-element.style {
-    left: 8px;
-}
+
 
 html {
 
@@ -21,8 +19,9 @@ body {
 
 header {
     position: fixed;
-    width: 80.7%;
+    width: 100%;
     top: 0;
+    left: 8px;
     background-color: rgb(27, 29, 29);
     height: 3.5rem;
     border-bottom: 1px solid rgb(253, 238, 219);
@@ -284,9 +283,9 @@ span:hover {
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 75% 25%;
     gap: 2rem;
-    width: 125%;
+    width: 100%;
     justify-content: center;
 
 }
@@ -380,7 +379,7 @@ span:hover {
     color: rgb(253, 238, 219);
     padding: 1rem;
     bottom: 0;
-    width: 80.7%;
+    width: 100%;
     font-family: "Roboto", sans-serif;
     display: grid;
     justify-content: center;
