@@ -3,6 +3,10 @@
     color: rgb(253, 238, 219);
 }
 
+element.style {
+    left: 8px;
+}
+
 html {
 
     scroll-behavior: smooth;
@@ -17,7 +21,7 @@ body {
 
 header {
     position: fixed;
-    width: auto;
+    width: 80.7%;
     top: 0;
     background-color: rgb(27, 29, 29);
     height: 3.5rem;
@@ -376,7 +380,7 @@ span:hover {
     color: rgb(253, 238, 219);
     padding: 1rem;
     bottom: 0;
-    width: auto;
+    width: 80.7%;
     font-family: "Roboto", sans-serif;
     display: grid;
     justify-content: center;
