@@ -304,6 +304,7 @@ span:hover {
     animation-name: spin;
 }
 
+/*
 @keyframes spin {
     0% {
         scale: .5;
@@ -314,7 +315,7 @@ span:hover {
         scale: .5;
     }
 }
-
+*/
 
 .button {
     padding: 0.5rem 1rem;
